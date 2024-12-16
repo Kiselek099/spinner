@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/roleToolbarS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Введите имя"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <EditText
+        android:id="@+id/surnameET"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Введите фамилию"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <EditText
+        android:id="@+id/ageET"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Введите возраст"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <Spinner
+        android:id="@+id/roleS"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Сохранить"
+        android:layout_marginTop="16dp">
+    </Button>
+    <ListView
+        android:id="@+id/personsLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item">
+    </ListView>
+
+</LinearLayout>
